@@ -104,8 +104,9 @@ def spider(cityCode, cookie):
             logger.error(f'[失败任务] { ",".join(error_route) }')
 
 if __name__ == "__main__":
-    # 青岛城市编码
+    # city 在这里修改
     CITY = 370200
+    # Cookie 在这里修改
     COOKIE = 'UM_distinctid=17a3d0b45c3ab6-0d489ab4acb0fc-34657400-1fa400-17a3d0b45c4dfe; cna=wn5YGWqxtxwCAdo6O0hffvWt; _uab_collina=162452178892489088983628; passport_login=NTUzNDYzMzgsYW1hcF8xODU2MDI2MTUxOTl2aGJSZDdsLHZ5NGF1ZmkzYnhhb2x5ZWh3ZW1kYTJmcTV1dG5ja3FxLDE2MjQ2MTgwMjAsTUdWa1pXSTNOMlF6WXpSa05qQTFNMlJrWVdaaU9EUTVZalkwTVdZNVlXTT0%3D; CNZZDATA1255626299=522210911-1624518968-https%253A%252F%252Fwww.baidu.com%252F%7C1625495040; guid=a1fc-2e45-3dad-bb41; x-csrf-token=becc059bb279bfe0f7c389e453fda876; x5sec=7b22617365727665723b32223a223631376564663164343466333631313637383130373231653637393762366438434948526a6f6347454e376378354441314b4c597177456f416a447675594159227d; tfstk=cy_GBRsVGpMWNK-hVPT1s_wi40SNCf32EZ7C8Z6p12EW_-kWQh5mxDoydVFHIObxc; l=eBMq6_6lj0rF1afFKO5aourza779rLAfG5VzaNbMiInca6L5VF4YGNCBm5cehdtjgtCjwExrRawxURFy-I4N95n8-lA1tTf7_xvO.; isg=BNvbxye4P4Fxd0PCgXMwYq-aajlFsO-yqUyMY80S81rxrP-OW4FGAtxiRgwis0eq'
 
     spider(CITY, COOKIE)
